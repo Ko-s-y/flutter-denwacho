@@ -38,25 +38,29 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Container(
-            color: Colors.red,
-            width: 100,
-            height: 100,
-          ),
-          Container(
-            color: Colors.blue,
-            width: 100,
-            height: 100,
-          ),
-          Container(
-            color: Colors.green,
-            width: 100,
-            height: 100,
-          ),
-        ],
+      body: Align(
+        alignment: Alignment.center, // カラム全体の移動はAlignでwrap
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              color: Colors.red,
+              width: 200,
+              height: 200,
+            ),
+            Container(
+              color: Colors.blue,
+              width: 150,
+              height: 150,
+            ),
+            Container(
+              color: Colors.green,
+              width: 100,
+              height: 100,
+            ),
+          ],
+        ),
       ),
     );
   }
