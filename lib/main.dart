@@ -38,29 +38,37 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              color: Colors.red,
-              width: 200,
-              height: 200,
-            ),
-            Container(
-              color: Colors.blue,
-              width: 150,
-              height: 150,
-            ),
-            Container(
-              color: Colors.green,
-              width: 100,
-              height: 100,
-            ),
-          ],
-        ),
+      body: ListView(
+        children: [
+          Container(
+            color: Colors.red,
+            height: 200,
+          ),
+          Container(
+            color: Colors.blue,
+            height: 200,
+          ),
+          Container(
+            color: Colors.green,
+            height: 200,
+          ),
+          Container(
+            color: Colors.yellow,
+            height: 200,
+          ),
+          Container(
+            color: Colors.purple,
+            height: 200,
+          ),
+          Container(
+            color: Colors.orange,
+            height: 200,
+          ),
+          Container(
+            color: Colors.pink,
+            height: 200,
+          ),
+        ],
       ),
     );
   }
