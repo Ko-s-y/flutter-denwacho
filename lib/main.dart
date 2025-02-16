@@ -83,8 +83,57 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('パスワードを変更する'),
             ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DenwachoPage(),
+                  ),
+                );
+              },
+              child: const Text('電話帳へ'),
+            ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class DenwachoPage extends StatelessWidget {
+  const DenwachoPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('電話帳'),
+      ),
+      body: ListView(
+        children: [
+          ListTile(
+            leading: const Icon(Icons.phone),
+            title: const Text('山田 太郎'),
+            subtitle: const Text('090-1234-5678'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: const Icon(Icons.phone),
+            title: const Text('山田 花子'),
+            subtitle: const Text('090-1234-5678'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: const Icon(Icons.phone),
+            title: const Text('山田 次郎'),
+            subtitle: const Text('090-1234-5678'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {},
+          ),
+        ],
       ),
     );
   }
