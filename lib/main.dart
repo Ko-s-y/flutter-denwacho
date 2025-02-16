@@ -43,16 +43,45 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
-              child: Text('ログインする'),
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return const AlertDialog(
+                      title: Text('ログイン'),
+                      content: Text('ログインしました！'),
+                    );
+                  },
+                );
+              },
+              child: const Text('ログインする'),
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: Text('新規登録する'),
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return const AlertDialog(
+                      title: Text('新規登録'),
+                      content: Text('新規登録しました！'),
+                    );
+                  },
+                );
+              },
+              child: const Text('新規登録する'),
             ),
             TextButton(
-              onPressed: () {},
-              child: Text('パスワードを忘れた方はこちら'),
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return const AlertDialog(
+                      title: Text('パスワードを変更しました'),
+                    );
+                  },
+                );
+              },
+              child: const Text('パスワードを変更する'),
             ),
           ],
         ),
