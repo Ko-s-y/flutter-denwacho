@@ -38,25 +38,19 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: ListView(
+      body: Column(
         children: [
-          ListTile(
-            leading: Icon(Icons.map),
-            title: Text('地図'),
-            trailing: Icon(Icons.arrow_forward_ios),
-            onTap: () {},
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('ログインする'),
           ),
-          ListTile(
-            leading: Icon(Icons.album),
-            title: Text('アルバム'),
-            trailing: Icon(Icons.arrow_forward_ios),
-            onTap: () {},
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('新規登録する'),
           ),
-          ListTile(
-            leading: Icon(Icons.phone),
-            title: Text('電話'),
-            trailing: Icon(Icons.arrow_forward_ios),
-            onTap: () {},
+          TextButton(
+            onPressed: () {},
+            child: Text('パスワードを忘れた方はこちら'),
           ),
         ],
       ),
