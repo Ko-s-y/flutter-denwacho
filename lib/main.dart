@@ -38,21 +38,24 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {},
-            child: Text('ログインする'),
-          ),
-          ElevatedButton(
-            onPressed: () {},
-            child: Text('新規登録する'),
-          ),
-          TextButton(
-            onPressed: () {},
-            child: Text('パスワードを忘れた方はこちら'),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('ログインする'),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('新規登録する'),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text('パスワードを忘れた方はこちら'),
+            ),
+          ],
+        ),
       ),
     );
   }
